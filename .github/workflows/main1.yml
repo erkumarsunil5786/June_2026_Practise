@@ -13,4 +13,4 @@ jobs:
         run: echo "Hello World! Good Morning"
         
       - name: Listing Files
-        run: ls -a
+        run: ls -a | wc -l 
