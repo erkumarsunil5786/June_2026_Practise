@@ -6,7 +6,11 @@ jobs:
     name: My First Job
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.3
+        
       - name: Printing Greeting Message
         run: echo "Hello World! Good Morning"
+        
       - name: Listing Files
         run: ls -a
