@@ -14,7 +14,9 @@ jobs:
         uses: actions/checkout@v6.0.3
         
       - name: Printing Greeting Message
-        run: echo "Hello $first_name tum $second_name"
+        env:
+          third_name: SONA
+        run: echo "Hello $first_name tum $second_name & $third_name"
         
       - name: Listing Files
         run: ls -a | wc -l 
