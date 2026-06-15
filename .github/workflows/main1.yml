@@ -8,3 +8,5 @@ jobs:
     steps:
       - name: Printing Greeting Message
         run: echo "Hello World! Good Morning"
+      - name: Listing Files
+        run: ls -la
