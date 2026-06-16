@@ -19,4 +19,4 @@ jobs:
         run: echo "Hello $first_name tum $second_name & $third_name"
         
       - name: Listing Files
-        run: ls -a | wc -l 
+        run: ls -a | wc -l
