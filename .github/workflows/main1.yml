@@ -1,8 +1,6 @@
 name: My First Workflow
 on: 
   workflow_dispatch: 
-env: 
-  first_name: MONA
 jobs:
   My_First_Job:
     env:
@@ -16,7 +14,7 @@ jobs:
       - name: Printing Greeting Message
         env:
           third_name: SONA
-        run: echo "Hello $first_name tum $second_name & $third_name"
+        run: echo "Hello ${{ vars.first_name }} tum $second_name & $third_name"
         
       - name: Listing Files
         run: ls -a | wc -l
