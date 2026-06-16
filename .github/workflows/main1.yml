@@ -1,20 +1,20 @@
-name: My First Workflow
-on: 
-  workflow_dispatch: 
-jobs:
-  My_First_Job:
-    # env:
-    #   second_name: RONA
-    name: My First Job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6.0.3
+# name: My First Workflow
+# on: 
+#   workflow_dispatch: 
+# jobs:
+#   My_First_Job:
+#     # env:
+#     #   second_name: RONA
+#     name: My First Job
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v6.0.3
         
-      - name: Printing Greeting Message
-        env:
-          third_name: SONA
-        run: echo "Hello ${{ vars.first_name }} tum ${{ secrets.second_name }} & $third_name"
+#       - name: Printing Greeting Message
+#         env:
+#           third_name: SONA
+#         run: echo "Hello ${{ vars.first_name }} tum ${{ secrets.second_name }} & $third_name"
         
-      - name: Listing Files
-        run: ls -a | wc -l
+#       - name: Listing Files
+#         run: ls -a | wc -l
