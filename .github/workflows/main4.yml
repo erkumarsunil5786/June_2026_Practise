@@ -2,6 +2,10 @@ name: First Workflow
 on:
   # workflow_dispatch: 
   push: 
+    branches:
+      - main
+      - feature
+      - devlop
 jobs:
   My_First_Job:
     name: My First Job
