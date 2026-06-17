@@ -4,6 +4,7 @@ jobs:
   My_First_Job:
     name: My First Job
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - run: echo "My First Job Run"
       - run: cat service.yaml
