@@ -3,8 +3,11 @@ on:
   # workflow_dispatch: 
   push: 
     branches:
+      - devlop
       - main
-      - feature
+  pull_request:
+    branches:
+      - main
       - devlop
 jobs:
   My_First_Job:
