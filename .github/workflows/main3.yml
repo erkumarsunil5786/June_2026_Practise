@@ -2,12 +2,12 @@ on:
   push:
 jobs:
   Matrix_Job:
-  name: My Matrix Job
-  strategy:
-    matrix: 
-      os: [ubuntu-latest, windows-latets, macos-latest] 
-  runs-on: ${{ matrix.os }}
-  steps:
-    - run: echo "Hello Matrix Job! Good Morning" 
-    
+    name: My Matrix Job
+    strategy:
+      matrix: 
+        os: [ubuntu-latest, windows-latets, macos-latest] 
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: echo "Hello Matrix Job! Good Morning" 
+      
       
