@@ -1,1 +1,19 @@
+on:
+  push:
+jobs:
+  My_First_Job:
+    name: My First Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "My First Job Run"
+  My_Second_Job:
+    name: My Second Job
+    needs: My_First_Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "My Second Job Run"
 
+
+
+    
+    
