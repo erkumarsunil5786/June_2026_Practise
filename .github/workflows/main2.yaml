@@ -10,6 +10,7 @@ jobs:
   My_Second_Job:
     name: My Second Job
     needs: My_First_Job
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - run: echo "My Second Job Run"
