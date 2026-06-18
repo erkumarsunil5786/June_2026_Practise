@@ -4,11 +4,11 @@ on:
     branches:
       - main
       - devlop
-Jobs:
+jobs:
   My_First_Terraform_Job:
     name: My First Terraform Job
     runs-on: ubuntu-latest
-   steps:
+    steps:
      - uses: actions/checkout@v4
      - uses: hashicorp/setup-terraform@v4
        with:
